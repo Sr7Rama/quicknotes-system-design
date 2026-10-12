@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>QuickNotes API Client</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="api.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <h1>QuickNotes API Client</h1>
+      <p>Live frontend connected to JSONPlaceholder practice API</p>
+    </header>
+
+    <main>
+      <section>
+        <h2>Actions</h2>
+        <button id="load-btn" type="button">Load notes</button>
+        <p id="status"></p>
+      </section>
+
+      <section>
+        <h2>Add a Note</h2>
+        <form id="note-form">
+          <p>
+            <label for="title-input">Title (required, max 100 chars):</label>
+            <input
+              type="text"
+              id="title-input"
+              placeholder="Enter note title..."
+              required
+            />
+          </p>
+          <p>
+            <label for="body-input">Body (optional):</label>
+            <textarea
+              id="body-input"
+              placeholder="Enter note body..."
+              rows="4"
+            ></textarea>
+          </p>
+          <button id="submit-btn" type="submit">Create Note</button>
+        </form>
+      </section>
+
+      <section>
+        <h2>Your Notes</h2>
+        <ul id="notes-list"></ul>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2026 QuickNotes System Architecture</p>
+    </footer>
+  </body>
+</html>
